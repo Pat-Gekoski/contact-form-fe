@@ -10,7 +10,11 @@ module.exports = {
 				lightGray: 'hsl(186, 15%, 59%)',
 				darkGray: 'hsl(187, 24%, 22%)',
 			},
+			fontFamily: {
+				karla: ['Karla', 'serif'],
+			},
 		},
 	},
+	safelist: ['border-lightGray', 'border-darkGreen'],
 	plugins: ['prettier-plugin-tailwindcss'],
 }

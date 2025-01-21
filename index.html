@@ -10,8 +10,78 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/script.js" defer></script>
 	</head>
 	<body class="bg-lightGreen">
-		<main class="container flex min-h-screen items-center justify-center"></main>
+		<main class="font-karla container mx-auto flex min-h-screen items-center justify-center p-4">
+			<form class="max-w-[600px] flex-1 rounded-lg bg-white p-5">
+				<h2 class="mb-8 text-3xl font-bold">Contact Us</h2>
+				<!-- form inputs -->
+				<div class="flex flex-col gap-3">
+					<!-- input row -->
+					<div class="mb-1 flex w-full flex-row flex-wrap gap-4">
+						<!-- input container -->
+						<div class="flex flex-1 flex-col">
+							<label for="firstName" class="text-darkGray mb-2 text-sm opacity-85">First Name *</label>
+							<input type="text" id="firstName" name="firstName" class="text-input" placeholder="Patric" />
+						</div>
+						<div class="flex flex-1 flex-col">
+							<label for="firstName" class="text-darkGray mb-2 text-sm opacity-85">Last Name *</label>
+							<input id="lastName" type="text" name="lastName" class="text-input" placeholder="Patric" />
+						</div>
+					</div>
+					<!-- input row -->
+					<div class="mb-0 flex flex-1 flex-col">
+						<label for="email" class="text-darkGray mb-2 text-sm opacity-85">Email Address *</label>
+						<input id="email" type="email" class="text-input" name="email" />
+					</div>
+					<!-- radio group label -->
+					<p class="text-darkGray m-0 p-0 text-sm opacity-85">Query Type *</p>
+					<!-- input row -->
+					<div class="mb-1 flex w-full flex-row flex-wrap gap-x-4 gap-y-6">
+						<div class="radio-input-container not-active transition-all duration-500">
+							<label for="general" class="text-darkGray relative flex flex-1 flex-row pl-8 text-base opacity-85">
+								<input type="radio" id="general" name="queryType" class="radio-input absolute opacity-0" />
+								<span
+									class="border-lightGray before:bg-darkGreen absolute left-0 inline-block h-5 w-5 translate-y-[2px] rounded-[50%] border-2 transition-opacity before:absolute before:left-1/2 before:top-1/2 before:block before:h-[10px] before:w-[10px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:opacity-0 before:duration-500 before:content-['']"
+								></span>
+								General Enquiry
+							</label>
+						</div>
+						<div class="radio-input-container not-active transition-all duration-500">
+							<label for="support" class="text-darkGray relative flex flex-1 flex-row pl-8 text-base opacity-85">
+								<input type="radio" id="support" name="queryType" class="radio-input absolute opacity-0" />
+								<span
+									class="border-lightGray before:bg-darkGreen absolute left-0 inline-block h-5 w-5 translate-y-[2px] rounded-[50%] border-2 transition-opacity before:absolute before:left-1/2 before:top-1/2 before:block before:h-[10px] before:w-[10px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:opacity-0 before:duration-500 before:content-['']"
+								></span>
+								Support Request
+							</label>
+						</div>
+					</div>
+					<!-- input row -->
+					<div class="mb-5 flex flex-1 flex-col">
+						<label for="email" class="text-darkGray mb-2 text-sm opacity-85">Message *</label>
+						<textarea id="message" rows="4" type="text" class="text-area" name="message"></textarea>
+					</div>
+					<!-- checkbox row -->
+					<div class="mb-8 flex flex-row gap-2">
+						<label
+							for="consent"
+							class="text-darkGray relative flex flex-1 cursor-pointer flex-row items-center pl-10 text-base opacity-85"
+						>
+							<input type="checkbox" id="consent" name="consent" class="checkbox-input absolute opacity-0" />
+							<span
+								class="border-lightGray absolute left-0 inline-block h-5 w-5 translate-y-[2px] overflow-hidden rounded-sm border-2"
+							></span>
+							I consent to being contacted by the team *
+						</label>
+					</div>
+					<!-- Submit button -->
+					<button class="bg-darkGreen flex items-center justify-center rounded-lg p-4 text-lg text-white outline-none">
+						Submit
+					</button>
+				</div>
+			</form>
+		</main>
 	</body>
 </html>
