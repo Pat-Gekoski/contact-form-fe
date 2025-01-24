@@ -695,13 +695,13 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-\[2px\] {
-  --tw-translate-y: 2px;
+.translate-y-\[1px\] {
+  --tw-translate-y: 1px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-\[1px\] {
-  --tw-translate-y: 1px;
+.translate-y-\[2px\] {
+  --tw-translate-y: 2px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1055,7 +1055,7 @@ video {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: url('/img/icon-checkbox-check.svg');
+  background-image: url('../img/icon-checkbox-check.svg');
   background-size: cover;
   background-repeat: no-repeat;
   transform: scale(0);
