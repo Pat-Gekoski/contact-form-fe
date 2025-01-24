@@ -12,9 +12,9 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="js/script.js" defer></script>
 	</head>
-	<body class="bg-lightGreen">
+	<body class="bg-lightGreen relative">
 		<main class="font-karla container mx-auto flex min-h-screen items-center justify-center p-4">
-			<form id="form" class="max-w-[600px] flex-1 rounded-lg bg-white p-5">
+			<form id="form" class="max-w-[650px] flex-1 rounded-lg bg-white p-5">
 				<h2 class="mb-8 text-3xl font-bold">Contact Us</h2>
 				<!-- form inputs -->
 				<div class="flex flex-col gap-3">
@@ -76,7 +76,7 @@
 						>
 							<input type="checkbox" id="consent" name="consent" class="checkbox-input absolute opacity-0" />
 							<span
-								class="border-lightGray absolute left-0 inline-block h-5 w-5 translate-y-[2px] overflow-hidden rounded-sm border-2"
+								class="border-lightGray absolute left-0 inline-block h-5 w-5 translate-y-[1px] overflow-hidden rounded-sm border-2"
 							></span>
 							I consent to being contacted by the team *
 						</label>
@@ -89,5 +89,21 @@
 				</div>
 			</form>
 		</main>
+
+		<div
+			id="toast"
+			class="bg-darkGray absolute left-1/2 top-6 max-w-96 -translate-x-1/2 -translate-y-52 rounded-lg p-6 text-white opacity-0 transition duration-300"
+		>
+			<div class="mb-3 flex w-full flex-row gap-2">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+					<path
+						fill="#fff"
+						d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"
+					/>
+					<p class="text-sm font-semibold tracking-wide text-white opacity-90">Message Sent!</p>
+				</svg>
+			</div>
+			<p class="font-white text-xs tracking-wide opacity-70">Thanks for completing the form. We'll be in touch soon!</p>
+		</div>
 	</body>
 </html>
