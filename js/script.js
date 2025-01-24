@@ -146,6 +146,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function showSuccessMsg() {
 		clearForm()
-		alert('Eat Me')
+		for (const btn of radioBtns) {
+			const container = btn.closest('.radio-input-container')
+			container.classList.remove('active')
+			container.classList.add('not-active')
+		}
+		const toast = document.getElementById('toast')
+
+		console.log('toast: ', toast)
+
+		if (toast) {
+			toast.classList.remove('opacity-0')
+			toast.classList.remove('-translate-y-52')
+			toast.classList.add('translate-y-0')
+			toast.classList.add('opacity-100')
+
+			setTimeout(() => {
+				toast.classList.remove('translate-y-0')
+				toast.classList.remove('opacity-100')
+				toast.classList.add('opacity-0')
+				toast.classList.add('-translate-y-52')
+			}, 3000)
+		}
 	}
 })
