@@ -45,7 +45,7 @@
 	height: 100%;
 	left: 0;
 	top: 0;
-	background-image: url('../img/icon-checkbox-check.svg');
+	background-image: url('./img/icon-checkbox-check.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	transform: scale(0);
