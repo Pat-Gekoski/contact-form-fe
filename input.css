@@ -56,3 +56,4 @@
 .checkbox-input:checked + span:before {
 	transform: scale(1.1);
 }
+//
